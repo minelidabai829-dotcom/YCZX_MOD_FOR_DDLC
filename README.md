@@ -55,23 +55,33 @@
 
 ### 1. 前置准备
 * **原版游戏**：你必须先下载并安装官方原版《Doki Doki Literature Club!》（DDLC 1.1.1 版本，可于 [Steam](https://store.steampowered.com/app/698720/Doki_Doki_Literature_Club/) 或 [DDLC 官网](https://ddlc.moe/) 免费获取）。
-* **运行环境**：支持 **Ren'Py 6.99** 或更高版本的开发与运行环境（不用额外下载开发工具）。
-* **主角姓名**：由于技术限制，你必须先打开原版DDLC游戏，点击“New Game”，输入**全英文名称**，点击确定，然后立刻退出游戏。
-（已经帮你们整合了原版DDLC v1.1.1压缩包，直接解压即可，不需要另外汉化。）
+* **运行环境**：支持 **Ren'Py 6.99** 或更高版本的开发与运行环境（**注：普通玩家仅需直接运行即可，无需额外下载开发工具**）。
+* **主角姓名关键操作**：由于技术限制与汉化兼容，你必须先打开原版 DDLC 游戏，点击“New Game”，输入**全英文名称**（如 `Player`），点击确定，然后立刻退出游戏。（*注：若使用的是已整合的原版 DDLC v1.1.1 压缩包，直接解压即可，不需要另外手动汉化。*）
 
-### 2. 详细安装步骤
+---
 
-#### PC / Windows / macOS 安装方式：
+### 2. 详细安装步骤 (Windows / macOS)
+
 1. 下载并解压《燕川中学》MOD 压缩包。
-2. 打开你下载好的 **原版 DDLC 游戏根目录**（Steam 用户可右键游戏 -> 浏览本地文件）。
+   
+2. 打开你下载好的 **原版 DDLC 游戏根目录**（Steam 用户可右键游戏 -> “管理” -> “浏览本地文件”）。
+   
 3. 找到原版游戏内的 `game/` 文件夹。
+   
 4. 将 MOD 包内的所有文件（包含 `script.rpy` 以及 `mod_assets/` 文件夹）**复制并粘贴覆盖** 到原版游戏的 `game/` 目录下。
+   
 5. 双击启动 `DDLC.exe`（Windows）或启动游戏可执行程序（macOS），即可开始游玩。
-6.若打开游戏发现有黑色背景，粉色DONK栏上写着“A previous save file has been found.Would you like to delete your save data and start over？”的提示时，分以下几种情况：
-   （1）若你之前**玩过原版DDLC游戏**，点击“No,continue where I left off.”。
-   （2）若你之前**没有玩过DDLC，没有打开过DDLC.exe、DDLC.app软件的**，点击“Yes,delete my existing data.”。
-   （3）若你之前没有玩过DDLC，但是**按照“1.前置准备-主角姓名”的指引打开过原版DDLC手动添加了主角姓名的**，请点击“No,continue where I left off.”。
-   （4）若你之前**玩过DDLC，但你删除了**，还是点击“No,continue where I left off.”，若你之前特意把存档**一并删除**，点击“Yes,delete my existing data.”，若按照**按照“1.前置准备-主角姓名”的指引打开过原版DDLC手动添加了主角姓名的**，请点击“No,continue where I left off.”。
+   
+#### 启动重置提示（必看）：
+若打开游戏发现有黑色背景，粉色 DONK 栏上写着：
+> *“A previous save file has been found. Would you like to delete your save data and start over?”*
+
+请根据你的实际情况选择：
+
+* **情况 A**：若你之前**玩过原版 DDLC 游戏**，点击 `No, continue where I left off.`。
+* **情况 B**：若你之前**没有玩过 DDLC，且从未打开过 DDLC.exe/DDLC.app**，点击 `Yes, delete my existing data.`。
+* **情况 C**：若你之前没玩过 DDLC，但**按照“1.前置准备-主角姓名”的指引打开过原版 DDLC 手动添加了主角姓名**，请点击 `No, continue where I left off.`。
+* **情况 D**：若你之前**玩过 DDLC 但后来删除了**，还是点击 `No, continue where I left off.`；若你之前特意把**存档一并删除了**，且按照指引重新输入了姓名，请点击 `No, continue where I left off.`。
 
 > **排错提示**：若覆盖后启动游戏提示代码冲突报错，请手动删除 `game/` 目录下的官方打包文件 `scripts.rpa` 后重新运行。
 
